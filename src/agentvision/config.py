@@ -2,7 +2,7 @@ from typing import Tuple
 
 import os
 
-from .src_planercnn.config import Config as _Config
+from .planercnn.config import Config as _Config
 
 
 def update_attrs(obj, kwargs):

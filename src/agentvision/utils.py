@@ -8,9 +8,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 # Import from source yolo and planercnn
-from .src_yolov3.utils.utils import xywh2xyxy, plot_one_box
-from .src_yolov3.utils.datasets import letterbox
-from .src_planercnn.visualize_utils import unmold_image, draw_instances
+from .yolov3.utils.utils import xywh2xyxy, plot_one_box
+from .yolov3.utils.datasets import letterbox
+from .planercnn.visualize_utils import unmold_image, draw_instances
 
 
 def extract_weights_from_model(

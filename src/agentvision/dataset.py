@@ -7,14 +7,14 @@ import torch
 from torch.utils.data.dataloader import default_collate
 from torchvision.datasets.folder import pil_loader
 
-from .src_yolov3.utils.datasets import LoadImagesAndLabels as YoloDataset
-from .src_yolov3.utils.parse_config import parse_data_cfg as parse_yolo_data_cfg
+from .yolov3.utils.datasets import LoadImagesAndLabels as YoloDataset
+from .yolov3.utils.parse_config import parse_data_cfg as parse_yolo_data_cfg
 
 from .transforms import ToTensor, ToNumpy
 from .utils import parse_data_cfg
 
-from .src_planercnn import utils
-from .src_planercnn.visualize_utils import image_to_mask
+from .planercnn import utils
+from .planercnn.visualize_utils import image_to_mask
 
 
 class PlaneRCNNDataset(torch.utils.data.Dataset):
