@@ -1,7 +1,7 @@
 <h1 align="center"> AgentVision2.0</h1>
 
 <div align="center">
-<img src="docs/images/agentvision.png" >
+<img src="src/docs/images/agentvision.png" >
 </div>
 
 AgentVision is a three-headed bot. Each head has it's own objective.
