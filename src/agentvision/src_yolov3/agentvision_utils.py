@@ -4,8 +4,8 @@ import math
 import numpy as np
 import torch.nn.functional as F
 import torch
-from utils.utils import compute_loss, non_max_suppression, clip_coords, xywh2xyxy, box_iou, ap_per_class
-from utils.torch_utils import ModelEMA
+from .utils.utils import compute_loss, non_max_suppression, clip_coords, xywh2xyxy, box_iou, ap_per_class
+from .utils.torch_utils import ModelEMA
 
 class YoloTrainer:
     def __init__(self, model, hyp, opt, nb, nc):

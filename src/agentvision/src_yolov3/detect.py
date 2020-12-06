@@ -1,8 +1,8 @@
 import argparse
 
-from models import *  # set ONNX_EXPORT in models.py
-from utils.datasets import *
-from utils.utils import *
+from .models import *  # set ONNX_EXPORT in models.py
+from .utils.datasets import *
+from .utils.utils import *
 
 
 def detect(save_img=False):
