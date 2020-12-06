@@ -8,7 +8,7 @@ with open('requirements.txt', 'r') as fh:
 
 setuptools.setup(
     name="arunsechergy",  # Replace with your own username
-    version="2.0",
+    version="2.1",
     author="Arun Kumar RN",
     author_email="arun.rvbe@gmail.com",
     description="AgentVision2.0",
