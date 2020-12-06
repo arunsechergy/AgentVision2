@@ -77,9 +77,11 @@ Learnings on the dataset
 1. If the input images are between 2000 and 5000 per class, then freeze the model and fine tune the last few layers,
 example to freeze the midas model:
 <br/>
+
 `for param in self.midas_net.parameters():<br/>
  param.requires_grad = False
-                ` 
+ `
+ <br/> 
 > If the input images are between 5000 and 10000 per class, then fine tuning will be good.
 > If the input images are greater than 10000 per class, then the entire model can be trained
 
