@@ -7,14 +7,14 @@ with open('requirements.txt', 'r') as fh:
     required = fh.read().splitlines()
 
 setuptools.setup(
-    name="arunsechergy",  # Replace with your own username
-    version="2.1",
+    name="arunsechergy",
+    version="2.2",
     author="Arun Kumar RN",
     author_email="arun.rvbe@gmail.com",
-    description="AgentVision2.0",
+    description="AgentVision 2.0",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/arunsechergy/AgentVision2.0",
+    url="https://github.com/arunsechergy/AgentVision2",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
