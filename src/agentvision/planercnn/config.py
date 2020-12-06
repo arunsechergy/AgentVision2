@@ -188,9 +188,7 @@ class Config(object):
             self.VRANGE_UNIT = ((torch.arange(self.IMAGE_MIN_DIM, requires_grad=False).cuda().float() + 0.5) / self.IMAGE_MIN_DIM).view((-1, 1)).repeat(1, self.IMAGE_MAX_DIM)
             self.ONES = torch.ones(self.URANGE_UNIT.shape, requires_grad=False).cuda()
             pass
-        
-        
-        # Compute backbone size from input image size
+
         self.BACKBONE_SHAPES = np.array(
             [[int(math.ceil(self.IMAGE_SHAPE[0] / stride)),
               int(math.ceil(self.IMAGE_SHAPE[1] / stride))]
